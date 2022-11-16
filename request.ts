@@ -123,6 +123,18 @@ class Request {
   }
   
   protected requestLog(request: any): void {
+    const randomColor = `rgba(${Math.round(Math.random() * 255)},${Math.round(
+        Math.random() * 255
+      )},${Math.round(Math.random() * 255)})`
+      console.log(
+        '%c┍------------------------------------------------------------------┑',
+        `color:${randomColor};`
+      )
+      console.log('| 请求地址：', request.config.url)
+      console.log(
+        '%c┕------------------------------------------------------------------┙',
+        `color:${randomColor};`
+      )
   }
 
   protected responseLog(response: any): void {
