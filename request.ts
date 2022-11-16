@@ -130,6 +130,7 @@ class Request {
         '%c┍------------------------------------------------------------------┑',
         `color:${randomColor};`
       )
+      console.log('| request：', request)
       console.log('| 请求地址：', request.config.url)
       console.log(
         '%c┕------------------------------------------------------------------┙',
